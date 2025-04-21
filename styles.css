@@ -173,14 +173,13 @@ button:hover {
 
     body {
         height: 100%;
-        /* Ou 'auto' dependendo do seu conteúdo */
         overflow-x: hidden;
         background-image: linear-gradient(to bottom, transparent, var(--verde));
         /* Gradiente suave */
         background-repeat: no-repeat;
         background-position: bottom;
         background-size: 100% 90vh;
-        /* Ajuste a altura do efeito visual */
+
     }
 
     .wrapper-principal {
@@ -219,7 +218,7 @@ button:hover {
 
     .menu-opcoes {
         position: relative;
-        padding-top: 100px;
+        padding-top: 120px;
     }
 
     .circulo {
