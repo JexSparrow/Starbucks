@@ -1,4 +1,4 @@
-:root{
+:root {
     --verde: #017143;
     --rosa-claro: #c467b2;
     --rosa-escuro: #c11a70;
@@ -6,7 +6,7 @@
 
 }
 
-*{
+* {
     font-family: "Kanit", sans-serif;
     margin: 0;
     padding: 0;
@@ -16,15 +16,15 @@
 body {
     width: 100vw;
     height: 100vh;
-    border: 5px solid var(--verde); 
+    border: 5px solid var(--verde);
     transition: 1s;
 }
 
 .logo {
     width: 64px;
     position: relative;
-    top:10px;
-    left:50%;
+    top: 10px;
+    left: 50%;
     transform: translateX(-50%);
 }
 
@@ -35,7 +35,7 @@ h2 {
 
 h1 {
     font-size: 40px;
-    
+
 }
 
 span {
@@ -45,10 +45,10 @@ span {
 
 p {
     font-size: 16px;
-    
+
 }
 
-button{
+button {
     font-size: 16px;
     width: 150px;
     height: 38px;
@@ -60,15 +60,15 @@ button{
     margin-top: 30px;
     transition: 1.2s;
     font-weight: 500;
-    
+
 }
 
-button:hover{
-    width: 160px;
-    font-size: 17px;
+button:hover {
+    scale: 1.05;
+
     box-shadow: 8px 8px 15px var(--verde);
     border: none;
-    padding: 2px;
+    padding: 5px;
 }
 
 
@@ -85,29 +85,29 @@ button:hover{
     gap: 8px;
     width: 50%;
     padding: 30px;
-    
+
 
 }
 
-.wrapper-principal .conteiner-esquerda:first-of-type span{
+.wrapper-principal .conteiner-esquerda:first-of-type span {
     font-size: 52px;
     color: var(--verde);
-    
+
 
 }
 
 .display-direita {
     display: flex;
     width: 50%;
-    
+
 }
 
 .copo {
     position: fixed;
     right: 0px;
     bottom: -50px;
-    
-    height: 550px;
+
+    height: 100%;
 }
 
 .circulo {
@@ -121,7 +121,7 @@ button:hover{
     background: var(--verde);
 
     transition:
-    1s linear(0 0%, 0 2.27%, 0.02 4.53%, 0.04 6.8%, 0.06 9.07%, 0.1 11.33%, 0.14 13.6%, 0.25 18.15%, 0.39 22.7%, 0.56 27.25%, 0.77 31.8%, 1 36.35%, 0.89 40.9%, 0.85 43.18%, 0.81 45.45%, 0.79 47.72%, 0.77 50%, 0.75 52.27%, 0.75 54.55%, 0.75 56.82%, 0.77 59.1%, 0.79 61.38%, 0.81 63.65%, 0.85 65.93%, 0.89 68.2%, 1 72.7%, 0.97 74.98%, 0.95 77.25%, 0.94 79.53%, 0.94 81.8%, 0.94 84.08%, 0.95 86.35%, 0.97 88.63%, 1 90.9%, 0.99 93.18%, 0.98 95.45%, 0.99 97.73%, 1 100%);
+        1s linear(0 0%, 0 2.27%, 0.02 4.53%, 0.04 6.8%, 0.06 9.07%, 0.1 11.33%, 0.14 13.6%, 0.25 18.15%, 0.39 22.7%, 0.56 27.25%, 0.77 31.8%, 1 36.35%, 0.89 40.9%, 0.85 43.18%, 0.81 45.45%, 0.79 47.72%, 0.77 50%, 0.75 52.27%, 0.75 54.55%, 0.75 56.82%, 0.77 59.1%, 0.79 61.38%, 0.81 63.65%, 0.85 65.93%, 0.89 68.2%, 1 72.7%, 0.97 74.98%, 0.95 77.25%, 0.94 79.53%, 0.94 81.8%, 0.94 84.08%, 0.95 86.35%, 0.97 88.63%, 1 90.9%, 0.99 93.18%, 0.98 95.45%, 0.99 97.73%, 1 100%);
 }
 
 
@@ -150,27 +150,83 @@ button:hover{
 .item-menu-opcoes:active {
     width: 74px;
 }
-.item-menu-opcoes:nth-child(1):hover{
-    transform: translateY(-15px)
-                rotateY(180deg);
-    
+
+.item-menu-opcoes:nth-child(1):hover {
+    transform: translateY(-15px) rotateY(180deg);
+
 
 }
 
-.item-menu-opcoes:nth-child(2):hover{
-    transform: translateY(-30px)
-                rotateZ(45deg);
+.item-menu-opcoes:nth-child(2):hover {
+    transform: translateY(-30px) rotateZ(45deg);
 
 }
 
-.item-menu-opcoes:nth-last-child(1):hover{
-    transform: translateX(10px)
-        translateY(-30px)
-        rotateZ(-30deg);
+.item-menu-opcoes:nth-last-child(1):hover {
+    transform: translateX(10px) translateY(-30px) rotateZ(-30deg);
     width: 72px;
-        
+
 
 }
 
+@media screen and (max-width: 710px) {
+
+    body {
+        height: 100%;
+        overflow-x: hidden;
+    }
 
 
+    .wrapper-principal {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .conteiner-esquerda {
+        width: 95%;
+        text-align: center;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    h2 {
+        font-size: 22px;
+        height: 10px;
+    }
+
+    h1 {
+        font-size: 26px;
+
+    }
+
+    .copo {
+        max-width: 100%;
+        z-index: 0;
+        display: block;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+
+
+    }
+
+    .menu-opcoes {
+        position: relative;
+        padding-top: 100px;
+
+    }
+
+    .circulo {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        bottom: 0px;
+        clip-path: circle(50% at 50% 100%);
+        z-index: -1;
+
+    }
+}
