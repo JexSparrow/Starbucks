@@ -5,21 +5,31 @@ const botaoCompra = document.querySelector('.botao-compra')
 const starbucks = document.querySelector('span')
 const body = document.querySelector('body')
 
-console.log(starbucks)
+function trocarCor(cor) {
 
-function trocarCor(cor){
-    
-    circulo.style.background = cor
-    botaoCompra.style.background = cor
-    botaoCompra.style.color = "white"
-    starbucks.style.color = cor
-    body.style.borderColor = cor
+    if (window.innerWidth <= 710) {
+        circulo.style.background = cor
+        botaoCompra.style.background = cor
+        botaoCompra.style.color = "white"
+        starbucks.style.color = cor
+        body.style.borderColor = cor
+        body.style.backgroundImage = `linear-gradient(to bottom, white, ${cor})`;
+
+    } else {
+
+        circulo.style.background = cor
+        botaoCompra.style.background = cor
+        botaoCompra.style.color = "white"
+        starbucks.style.color = cor
+        body.style.borderColor = cor
+
+    }
 }
 
-function trocarCopo(endereco){
+function trocarCopo(endereco) {
 
     copo.src = endereco
-    
+
 }
 
 
