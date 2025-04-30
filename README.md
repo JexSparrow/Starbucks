@@ -23,5 +23,7 @@ Confira: (https://buckstar-landing-page.netlify.app/)
 ![Captura de tela 2025-04-30 151933](https://github.com/user-attachments/assets/0eff65ef-5c74-4106-9efe-7628c675a102)
 ![Captura de tela 2025-04-30 152009](https://github.com/user-attachments/assets/f4c8b0c4-6b5e-4fb8-bf98-0d531b3d0396)
 
+<h3>Próximo passo: Responsividade Tablets</h3>
+
 
 
