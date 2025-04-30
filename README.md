@@ -19,4 +19,15 @@ Desenvolvido no <a href="https://aulas.devclub.com.br/m/courses"> Dev Club </a>
 
 Link para o projeto (https://iphone-landing-page-jex.netlify.app/)
 
+<h2>Layout para Desktop</h2>
+
+![Captura de tela 2025-04-30 151006](https://github.com/user-attachments/assets/53d145d5-b2af-420c-b840-b8bad93ceed9)
+![Captura de tela 2025-04-30 151025](https://github.com/user-attachments/assets/8731637a-0ca0-4a17-97b4-c28235fb4aca)
+
+
+<h2>Layout Mobile</h2>
+
+![Captura de tela 2025-04-30 151057](https://github.com/user-attachments/assets/f81b022c-bd64-4460-9167-15620b09e2d5)
+
+
 
